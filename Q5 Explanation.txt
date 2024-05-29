@@ -1,0 +1,8 @@
+Kod Açıklaması:
+is_prime Fonksiyonu: Bu fonksiyon, bir tamsayı olan n'yi parametre olarak alır ve n'nin asal olup olmadığını kontrol eder. n asal ise True, değilse False döndürür. Bu işlemi n'nin kareköküne kadar olan sayılara kadar deneyerek asallığı kontrol eder.
+
+find_nth_prime Fonksiyonu: Bu fonksiyon, ninci asal sayıyı bulur. İlk asal sayı olan 2'den başlayarak, ardışık tek sayıları kontrol eder ve her bir tek sayı için is_prime fonksiyonunu kullanarak asallığını kontrol eder. Bu işlemi ninci asal sayıyı bulana kadar devam ettirir.
+
+Sonucun Yazdırılması: 10001inci asal sayı, find_nth_prime fonksiyonu kullanılarak bulunur ve sonuç konsola yazdırılır.
+
+Bu kodu çalıştırdığınızda, doğru şekilde 10001inci asal sayıyı hesaplar ve çıktı olarak verir.
