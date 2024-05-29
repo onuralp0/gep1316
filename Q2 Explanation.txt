@@ -1,0 +1,11 @@
+Kodun açıklaması:
+
+`sum_of_even_fibonacci` fonksiyonu, üst sınırı tanımlayan bir argüman olan `limit` alır (bu durumda dört milyon).
+Değişkenler `a` ve `b`, Fibonacci dizisinin ilk iki terimi olan 1 ve 2 olarak başlatılır.
+`total_sum`, çift değerli terimlerin toplamını saklamak için 0 olarak başlatılır.
+Bir `while` döngüsü, `a` (mevcut Fibonacci terimi) sınırdan küçük veya eşit olduğu sürece çalışır.
+Döngünün içinde, `if a % 2 == 0` koşulu, mevcut terimin çift olup olmadığını kontrol eder. Eğer öyleyse, terim `total_sum`a eklenir.
+Fibonacci dizisindeki bir sonraki terim `a, b = b, a + b` kullanılarak üretilir.
+Döngü bittikten sonra, fonksiyon toplam değeri döndürür.
+Sonuç konsola yazdırılır.
+Bu kodu çalıştırdığınızda, dört milyondan küçük olan Fibonacci dizisindeki çift değerli terimlerin toplamını çıktı olarak verecektir.
