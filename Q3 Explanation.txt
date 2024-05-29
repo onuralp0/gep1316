@@ -1,0 +1,10 @@
+Kodun açıklaması:
+
+`largest_prime_factor` fonksiyonu bir sayı `n` alır.
+En küçük asal çarpan olan 2 ile başlar.
+İlk `while` döngüsü, `n` 2'ye bölünebildiği sürece `n`'yi 2'ye bölerek tüm 2 çarpanlarını kaldırır.
+Sonra `factor` 3 olarak ayarlanır ve `while` döngüsü 3'ten başlayarak tek sayılı çarpanları kontrol eder. `n`, `factor` ile bölünebildiği sürece `n`'yi `factor` ile bölmeye devam eder.
+`factor` her yinelemeden sonra bir sonraki tek sayıyı kontrol etmek için 2 artırılır.
+Bu, `factor * factor` `n`'yi aşana kadar devam eder. Bu noktada, eğer `n` 2'den büyükse, `n`'nin kendisi en büyük asal çarpandır.
+Eğer `n` 2'den büyük değilse, son geçerli çarpan döndürülür.
+Bu kodu çalıştırdığınızda, 600851475143 sayısının en büyük asal çarpanını çıktı olarak verecektir.
