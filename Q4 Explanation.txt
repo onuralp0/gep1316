@@ -1,0 +1,11 @@
+Kodun açıklaması:
+
+`is_palindrome` fonksiyonu, verilen bir sayının palindrom olup olmadığını, sayıyı bir string'e dönüştürüp tersini ile karşılaştırarak kontrol eder.
+`largest_palindrome_product` fonksiyonu, bulunan en büyük palindromu takip etmek için `max_palindrome`'u 0 olarak başlatır.
+Dış döngü, 100'den 999'a kadar olan tüm 3 basamaklı sayılar üzerinde iterasyon yapar.
+İç döngü de tüm 3 basamaklı sayılar üzerinde iterasyon yapar, ancak tekrarlayan hesaplamalardan kaçınmak için dış döngü değişkeni `i`'nin mevcut değerinden başlar.
+Her `i` ve `j` sayıları çifti için çarpım hesaplanır.
+Eğer çarpım bir palindrom ise ve mevcut `max_palindrome`'dan büyükse, `max_palindrome` güncellenir.
+Tüm iterasyonlar tamamlandıktan sonra, fonksiyon bulunan en büyük palindromu döner.
+Sonuç konsola yazdırılır.
+Bu kodu çalıştırdığınızda, iki 3 basamaklı sayının çarpımından elde edilen en büyük palindromu çıktı olarak verecektir.
