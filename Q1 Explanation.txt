@@ -1,0 +1,10 @@
+Kodun açıklaması:
+
+`sum_of_multiples` fonksiyonu, `limit` adında bir argüman alır ve bu argüman üst sınırı tanımlar (bu durumda 1000).
+`total_sum`, katların kümülatif toplamını saklamak için 0 olarak başlatılır.
+Bir `for` döngüsü, 1'den `limit - 1` (999) sayısına kadar her sayıyı iterasyonla kontrol eder.
+`if number % 3 == 0 or number % 5 == 0` koşulu, sayının 3 veya 5'in katı olup olmadığını kontrol eder.
+Koşul doğruysa, sayı `total_sum`'a eklenir.
+Döngü bittikten sonra, fonksiyon toplam değeri döndürür.
+Sonuç konsola yazdırılır.
+Bu kodu çalıştırdığınızda, 1000'in altında 3 veya 5'in tüm katlarının toplamı olan 233168'i çıktı olarak verecektir.
