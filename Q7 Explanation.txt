@@ -1,0 +1,10 @@
+Explanation of the Code
+Check if a number is bouncy:
+
+The is_bouncy function converts the number to a string and checks if the digits increase and decrease. If both increasing and decreasing conditions are met at any point, the number is bouncy.
+Find the least number with a specified proportion of bouncy numbers:
+
+The find_least_bouncy_proportion function starts from 100 (since numbers below 100 cannot be bouncy) and iterates through each number, counting how many are bouncy.
+For each number, it calculates the proportion of bouncy numbers encountered so far.
+When the proportion reaches 99% (0.99), it returns the current number.
+By running this code, you'll find the least number for which the proportion of bouncy numbers reaches exactly 99%.
