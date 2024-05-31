@@ -1,0 +1,12 @@
+Explanation of the Code:
+
+1. **Sieve of Eratosthenes**: This function generates all prime numbers up to a given limit. It uses a boolean array to mark non-prime numbers.
+2. **Dynamic Programming Array**: 
+   - `ways[0]` is initialized to 1 since there's one way to sum to zero (using no primes).
+   - For each prime number, we update the `ways` array for all values from that prime up to the limit. This is similar to the coin change problem where each prime is treated as a "coin".
+3. **Finding the Value**:
+   - We start with an initial limit and calculate the number of ways to form each number up to this limit.
+   - If the maximum number of ways found is not greater than 5,000, we double the limit and repeat the process until we find a number that meets the condition.
+   - Finally, we iterate through the `ways` array to find the smallest number with more than 5,000 ways to be written as a sum of primes.
+
+By running the above code, you'll get the first value which can be written as the sum of primes in over 5,000 different ways. Adjust the `limit` if necessary to ensure it covers the required range.
