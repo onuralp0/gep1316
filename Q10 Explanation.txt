@@ -1,0 +1,14 @@
+### Explanation
+
+1. **Bell Triangle Construction**:
+   - Initialize a 2D list (bell) to store the Bell numbers. Each element `bell[i][j]` represents the Bell number at row `i` and column `j`.
+   - The first Bell number `bell[0][0]` is initialized to 1, representing the single partition of an empty set.
+
+2. **Filling the Bell Triangle**:
+   - For each row \( i \) from 1 to \( n \), the first element `bell[i][0]` is set to the last element of the previous row `bell[i-1][i-1]`.
+   - For each subsequent element in the row `bell[i][j]`, it is computed as the sum of `bell[i-1][j-1]` (previous row's previous column) and `bell[i][j-1]` (current row's previous column).
+
+3. **Result Extraction**:
+   - The Bell number for \( n = 100 \) is found at `bell[100][0]`.
+
+This method leverages the properties of the Bell triangle to compute the Bell numbers efficiently up to \( n = 100 \). Given the constraints and computational feasibility, this dynamic programming approach is practical and provides the desired result.
