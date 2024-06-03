@@ -1,0 +1,14 @@
+### Explanation:
+
+1. **Generating Valid Combinations**:
+   - Use `itertools.product` to generate all possible combinations of digit counts from 0 to 3 for 10 digits.
+   - Filter these combinations to find those where the sum of counts is exactly 18.
+
+2. **Calculating Permutations**:
+   - For each valid combination, calculate the permutations using the factorial function.
+   - Adjust for repetitions of digits by dividing by the factorial of the counts.
+
+3. **Handling Leading Zero**:
+   - Subtract permutations where the first digit is zero by decrementing the count of zeros and recalculating the permutations.
+
+This approach ensures we correctly count all 18-digit numbers meeting the criteria, accounting for combinatorial constraints and avoiding leading zeros.
