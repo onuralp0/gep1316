@@ -1,0 +1,5 @@
+Explanation:
+1. **Function `is_square(n)`** checks if \( n \) is a perfect square.
+2. **Function `find_smallest_sum()`** iterates over potential values for \( a, b, c, d, e, \) and \( f \), checks the consistency conditions, and keeps track of the minimum sum \( x+y+z \) for valid combinations.
+
+The code uses an arbitrary limit to ensure the search is computationally feasible. This limit can be increased to ensure a more exhaustive search for the smallest solution. The solution checks all conditions and ensures \( x > y > z > 0 \) before updating the minimum sum.
